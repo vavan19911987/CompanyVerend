@@ -1,0 +1,40 @@
+.slider {
+  min-width: 1248px;
+  height: 400px;
+  margin: auto auto;
+  background-color: $bg_slider;
+  .swiper {
+    // position: absolute;
+    &__img {
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+        object-fit: cover;
+      }
+    }
+    &-button-prev {
+      background-image: url(../../img/prev.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      margin-left: 210px;
+    }
+    &-button-prev:after {
+      display: none;
+    }
+    &-button-next {
+      background-image: url(../../img/next.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      margin-right: 210px;
+    }
+    &-button-next:after {
+      display: none;
+    }
+  }
+
+}
+
+
