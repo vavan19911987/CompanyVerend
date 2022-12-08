@@ -1,0 +1,30 @@
+.text {
+  padding-bottom: 160px;
+  &__info {
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+
+  }
+
+  &__innertext {
+    width: 363px;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: $tel;
+    padding-right: 8px;
+  }
+  &__innertext2 {
+    width: 363px;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: $tel;
+    padding-left: 8px;
+  }
+}

@@ -1,0 +1,44 @@
+.footer {
+  min-width: 1400px;
+  height: 220px;
+  background-color: $bg_footer;
+   &__info {
+     display: flex;
+     justify-content: space-around;
+     padding-top: 50px;
+
+     &_label {
+       width: 200px;
+       font-family: 'PT Sans';
+       font-size: 14px;
+       line-height: 22px;
+       font-weight: 400;
+       letter-spacing: 0.025em;
+       color: #ffffff;
+     }
+     &_listitems {
+       font-family: 'PT Sans';
+       font-size: 14px;
+       line-height: 26px;
+       font-weight: 400;
+       text-decoration: underline;
+       letter-spacing: 0.025em;
+       a {
+         color: #ffffff;
+
+       }
+
+     }
+     &_subtext {
+       width: 135px;
+       font-family: 'PT Sans';
+       font-size: 14px;
+       line-height: 22px;
+       font-weight: 400;
+       text-decoration: underline;
+       letter-spacing: 0.025em;
+       color: #ffffff;
+
+     }
+   }
+}
