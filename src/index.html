@@ -67,6 +67,10 @@
 <!-- ! Отображаемое тело страницы -->
 
 
+
+
+
+<body>
 <div class="wrep">
 	<!--  ? SECTION HEADER -->
 	<section class="header">
@@ -82,7 +86,7 @@
 				<div class="header__phone">
 					<a href="tel:+74997777777" class="header__tel">+7 (499) 777-77-77 </a>
 					<a href="tel:+74997777777" class="header__tel">+7 (499) 777-77-77 </a>
-					<a href="#" class="header__button button"><p>Обратная связь</p></a>
+					<a href="#" class="header__button connection"><p>Обратная связь</p></a>
 				</div>
 			</div>
 		</div>
@@ -337,37 +341,70 @@
 	<!--  ? SECTION FOOTER  -->
 	<section class="footer">
 		<div class="container">
-<div class="footer__info">
-	<div class="footer__info_label">
-		© 2021–2022 ООО «Компания»
-		info@name.ru
-	</div>
-	<div class="footer__info_menulinks">
-		<ul class="footer__info_listitems">
-			<a href=""><li class="item">Главная</li></a>
-			<a href=""><li class="item">Каталог</li></a>
-			<a href=""><li class="item">Доставка и оплата</li></a>
-			<a href=""><li class="item">Прайс-лист</li></a>
-			<a href=""><li class="item">Контактв</li></a>
-		</ul>
-	</div>
-	<div class="footer__info_subtext">
-		Тестовое задание —
-		компания «VEREND»
-	</div>
+			<div class="footer__info">
+				<div class="footer__info_label">
+					© 2021–2022 ООО «Компания»
+					info@name.ru
+				</div>
+				<div class="footer__info_menulinks">
+					<ul class="footer__info_listitems">
+						<a href=""><li class="item">Главная</li></a>
+						<a href=""><li class="item">Каталог</li></a>
+						<a href=""><li class="item">Доставка и оплата</li></a>
+						<a href=""><li class="item">Прайс-лист</li></a>
+						<a href=""><li class="item">Контактв</li></a>
+					</ul>
+				</div>
+				<div class="footer__info_subtext">
+					Тестовое задание —
+					компания «VEREND»
+				</div>
 
-</div>
+			</div>
 		</div>
 	</section>
 
+	<!--  ? SECTION MODAL -->
+
+	<div class="overlay">
+		<div class="modal">
+			<div class="modal__subtitle">ОБРАТНАЯ СВЯЗЬ</div>
+
+			<div class="modal__close close">&times;</div>
+
+
+
+			<form  action="#" class="feed-form" novalidate>
+
+				<label for="name" class="label">Ваше имя*</label>
+				<input class="input" name="name" required type="text" id="name"/>
+
+				<label for="phone" class="label">Телефон*</label>
+				<input class="input inputPhone" name="phone" type="tel" id="phone"/>
+
+				<label for="email" class="label">Email*</label>
+				<input class="input inputEmail" name="email" id="email" type="email"/>
+
+				<label  class="label">Сообщение</label>
+				<textarea name="area" id="text">
+
+				</textarea>
+
+
+				<button type="submit" class="button button_form">Отправить</button>
+
+			</form>
+
+
+		</div>
+	</div>
 
 
 </div>
 
-
-<body>
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/just-validate.min.js"></script>
+
 </body>
 </html>
